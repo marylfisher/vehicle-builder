@@ -70,7 +70,7 @@ class Cli {
           this.createCar();
         } else if (answers.vehicleType === 'Truck') {
           this.createTruck();
-        } else (answers.vehicleType === 'Motorbike'){
+        } else if (answers.vehicleType === 'Motorbike'){
           this.createMotorbike();
         }
         // TODO: add statements to create a truck or motorbike if the user selects the respective vehicle type
@@ -184,8 +184,7 @@ class Cli {
             parseInt(answers.year),
             parseInt(answers.weight),
             parseInt(answers.topSpeed),
-            parseInt(answers.towingCapacity)
-            []
+            parseInt(answers.towingCapacity),
           );
         // TODO: Use the answers object to pass the required properties to the Truck constructor
         // TODO: push the truck to the vehicles array
@@ -265,7 +264,6 @@ class Cli {
           answers.frontWheelBrand,
           parseInt(answers.rearWheelDiameter),
           answers.rearWheelBrand,
-          []
         );
       
         // TODO: Use the answers object to pass the required properties to the Motorbike constructor
