@@ -185,7 +185,7 @@ class Cli {
             parseInt(answers.weight),
             parseInt(answers.topSpeed),
             parseInt(answers.towingCapacity),
-            [new Wheel(), new Wheel(), new Wheel(),new Wheel(),]
+            [new Wheel(), new Wheel(), new Wheel(),new Wheel()],
           );
         // TODO: Use the answers object to pass the required properties to the Truck constructor
         // TODO: push the truck to the vehicles array
