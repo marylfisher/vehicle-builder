@@ -20,8 +20,6 @@ class Motorbike extends Vehicle {
     // TODO: The constructor should initialize the properties of the Motorbike class
     // TODO: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
     constructor (
-      started: boolean,
-      currentSpeed: number,
       vin: string, 
       color: string, 
       make: string, 
