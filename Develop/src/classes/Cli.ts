@@ -300,6 +300,7 @@ class Cli {
           console.log("The truck cannot tow itself.");
           this.performActions();
         } else {
+          const selectedVehicle = answers.vehicleToTow;
           truck.tow(selectedVehicle);
           this.performActions();
         }
