@@ -20,6 +20,8 @@ class Motorbike extends Vehicle {
     // TODO: The constructor should initialize the properties of the Motorbike class
     // TODO: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
     constructor (
+      started: boolean,
+      currentSpeed: number,
       vin: string, 
       color: string, 
       make: string, 
@@ -28,10 +30,8 @@ class Motorbike extends Vehicle {
       weight: number,
       topSpeed: number,
       wheels: Wheel[],
-      started: boolean,
-      currentSpeed: number,
     ) {
-      super(started, currentSpeed);
+      super();
 
       this.vin = vin;
       this.color = color; 
@@ -41,22 +41,22 @@ class Motorbike extends Vehicle {
       this.weight = weight;
       this.topSpeed = topSpeed;
       this.wheels = wheels;
-    }
 
-    if(wheels.length !== 2) {
-      this.wheels = [new Wheel(), new Wheel()];
-    } else {
-      this.wheels = wheels;
+      if (wheels.length !==2) {
+        this.wheels = [new Wheel(), new Wheel()]
+      } else {
+        this.wheels = wheels;
+      }
     }
 
 
   // TODO: Implement the wheelie method
     // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
-    wheelie(): voide {
+    performWheelie(): void {
       console.log(`Motobike ${this.make} ${this.model} is doing a wheelie!`)
     }
   // TODO: Override the printDetails method from the Vehicle class
-  override printDetails(): voide {
+  override printDetails(): void {
     console.log(`Vin: ${this.vin}`);
     console.log(`Make: ${this.make}`);
     console.log(`Model: ${this.model}`);
